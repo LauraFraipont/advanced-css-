@@ -1,0 +1,70 @@
+body{
+    background-color: #c3cfe2;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+  }
+  
+  .container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #c3cfe2;
+  
+  
+  &__person1{
+    background-color: #4f4f4f;
+    max-width: 300px;
+    height: 350px;
+    margin: 10px;
+    border-radius: 15px;
+  
+  
+  &--button{
+    display: inline-block;
+    transform:translateY(-200px);
+    border: 2px solid white;
+    opacity: 0;
+    background-color: #4f4f4f;
+    color: white;
+    cursor: pointer;
+    height: 50px;
+    width: 150px;
+  }
+  
+  &--image{
+    width: 300px;
+    box-shadow: 0 0 5px #000;
+    height: 350px;
+    border-radius: 15px;
+  }
+  }
+  }
+  
+  .container__person1:hover>.container__person1--image{
+    opacity: 0;
+    transition: opacity 250ms ease-in;
+  }
+  
+  .container__person1--image:hover + .container__person1--button, .container__person1--button:hover {
+    display: inline-block;
+    opacity: 1.0;
+    transition: opacity 250ms ease-in;
+  }
+  
+  @media (min-width: 768px) {
+    .container{
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin: auto;
+    width: 768px;
+    }
+  } 
+  
+  @media (min-width: 960px) {
+    .container{
+    width: auto;
+    max-width: 960px;
+    }
+  }

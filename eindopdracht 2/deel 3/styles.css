@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  background-color: #c3cfe2;
+}
+
+.icons {
+  position: fixed;
+  top: 30%;
+  right: 0%;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+}
+
+.icons a {
+  text-decoration: underline;
+  text-transform: uppercase;
+  text-align: left;
+  padding: 10px;
+  font-size: 16px;
+  font-family: "Oswald", sans-serif;
+  margin: 2px;
+  border-radius: 50px 0 0 50px;
+  transform: translate(175px, 0px);
+}
+.icons a:hover {
+  transform: translate(0px, 0px);
+  transition: all 500ms;
+}
+.icons a:hover i {
+  transform: rotate(20deg);
+}
+
+.icons a i {
+  margin-right: 25px;
+  background-color: white;
+  height: 40px;
+  width: 40px;
+  color: black;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  transition: all 500ms;
+}
+
+.icons a i.fa-laptop-code {
+  color: #e17b77;
+}
+
+.icons a i.fa-twitter {
+  color: #53c5ff;
+}
+
+.icons a i.fa-linkedin {
+  color: #007bb6;
+}
+
+.icons a i.fa-facebook {
+  color: #2C80D3;
+}
+
+.laptop-code {
+  background-color: #e17b77;
+  color: white;
+}
+
+.twitter {
+  background-color: #53c5ff;
+  color: white;
+}
+
+.linkedin {
+  background-color: #007bb6;
+  color: white;
+}
+
+.facebook {
+  background-color: #2C80D3;
+  color: white;
+}
+
+.github {
+  background-color: #000;
+  color: white;
+}/*# sourceMappingURL=styles.css.map */
